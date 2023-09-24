@@ -10,7 +10,7 @@ namespace EdabitTasks
     //Task: Find the Smallest and Biggest Numbers
     //output: array = {Min, Max} 
 
-    public class MinMaxFinder
+    public static class MinMaxFinder
     {
         public static int[] findMinMax(int[] array)
         {

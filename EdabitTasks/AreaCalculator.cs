@@ -10,7 +10,7 @@ namespace EdabitTasks
     //Task: Area of a Triangle = (base * height) / 2
     //output: area 
 
-    public class AreaCalculator
+    public static class AreaCalculator
     {
         public static int triangleArea(int triangleBase, int triangleheighth)
         {
