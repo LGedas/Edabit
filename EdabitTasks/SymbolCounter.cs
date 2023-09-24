@@ -8,7 +8,7 @@ namespace EdabitTasks
 {
     public static class SymbolCounter
     {
-        public static int countDigits(string text)
+        private static int countDigits(string text)
         {
             int sum = 0;
 
@@ -23,7 +23,7 @@ namespace EdabitTasks
             return sum;
         }
 
-        public static int countLetters(string text)
+        private static int countLetters(string text)
         {
             int sum = 0;
 
@@ -38,5 +38,12 @@ namespace EdabitTasks
             return sum;
         }
 
+        public static string countAll(string text) 
+        {           
+            int digits = countDigits(text);
+            int letters = countLetters(text);            
+
+            return $"{{ LETTERS =  {letters}, DIGITS =  {digits} }}";
+        }
     }
 }
