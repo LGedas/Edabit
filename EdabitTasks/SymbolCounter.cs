@@ -12,12 +12,28 @@ namespace EdabitTasks
         {
             int sum = 0;
 
+            foreach (char symbol in text)
+            {
+                if (Char.IsDigit(symbol))
+                {
+                    sum++;
+                }
+            }
+
             return sum;
         }
 
         public static int countLetters(string text)
         {
             int sum = 0;
+
+            foreach (char symbol in text)
+            {
+                if (Char.IsLetter(symbol))
+                {
+                    sum++;
+                }
+            }
 
             return sum;
         }

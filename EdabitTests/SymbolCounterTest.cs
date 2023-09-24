@@ -21,7 +21,7 @@ namespace EdabitTests
             string testableString = "Hello5";
             int expected = 1;
 
-            int actual = SymbolCounter.countLetters(testableString);
+            int actual = SymbolCounter.countDigits(testableString);
 
             Assert.Equal(expected, actual);
         }
