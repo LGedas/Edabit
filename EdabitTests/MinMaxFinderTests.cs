@@ -2,7 +2,7 @@ using EdabitTasks;
 
 namespace EdabitTests
 {
-    public class MinMaxFinder
+    public class MinMaxFinderTests
     {
         [Fact]
         public void findMinMax_ArraySizeOf1_returnSameNumberTwice()
@@ -10,7 +10,7 @@ namespace EdabitTests
             int[] arraySizeOfOne = new int[] { 5 };
             int[] expectedArray = new int[] { 5, 5 };
 
-            int[] actualArray = EdabitTasks.MinMaxFinder.findMinMax(arraySizeOfOne);
+            int[] actualArray = MinMaxFinder.findMinMax(arraySizeOfOne);
 
             Assert.Equal(actualArray, expectedArray);    
         }
@@ -21,7 +21,7 @@ namespace EdabitTests
             int[] arraySizeOfOne = new int[] { 2334454, 5 };
             int[] expectedArray = new int[] { 5, 2334454 };
 
-            int[] actualArray = EdabitTasks.MinMaxFinder.findMinMax(arraySizeOfOne);
+            int[] actualArray = MinMaxFinder.findMinMax(arraySizeOfOne);
 
             Assert.Equal(actualArray, expectedArray);
         }
@@ -32,7 +32,7 @@ namespace EdabitTests
             int[] arraySizeOfOne = new int[] { 1, 2, 3, 4, 5 };
             int[] expectedArray = new int[] { 1, 5 };
 
-            int[] actualArray = EdabitTasks.MinMaxFinder.findMinMax(arraySizeOfOne);
+            int[] actualArray = MinMaxFinder.findMinMax(arraySizeOfOne);
 
             Assert.Equal(actualArray, expectedArray);
         }

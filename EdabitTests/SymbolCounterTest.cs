@@ -3,7 +3,7 @@ using System.ComponentModel.Design;
 
 namespace EdabitTests
 {
-    public class SymbolCounter
+    public class SymbolCounterTest
     {
         [Fact]
         public void countAll_string_countsCorectly()
@@ -11,7 +11,7 @@ namespace EdabitTests
             string expected = "{ LETTERS =  7, DIGITS =  3 }";
             string testableString = "H3ll0 Wor1d";
 
-            string actual = EdabitTasks.SymbolCounter.countAll(testableString);
+            string actual = SymbolCounter.countAll(testableString);
 
             Assert.Equal(expected, actual);
         }
