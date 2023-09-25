@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EdabitTasks
+﻿namespace EdabitTasks
 {
     //Dificulty: very Easy
     //Task: Area of a Triangle = (base * height) / 2

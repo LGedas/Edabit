@@ -9,9 +9,9 @@ namespace EdabitTests
         public void countAll_string_countsCorectly()
         {
             string expected = "{ LETTERS =  7, DIGITS =  3 }";
-            string testableString = "H3ll0 Wor1d";
+            string input = "H3ll0 Wor1d";
 
-            string actual = SymbolCounter.countAll(testableString);
+            string actual = SymbolCounter.countAll(input);
 
             Assert.Equal(expected, actual);
         }
