@@ -1,4 +1,6 @@
-﻿namespace EdabitTests
+﻿using EdabitTasks;
+
+namespace EdabitTests
 {
     public class AreaCalculator
     {

@@ -1,3 +1,5 @@
+using EdabitTasks;
+
 namespace EdabitTests
 {
     public class MinMaxFinder

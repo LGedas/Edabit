@@ -1,4 +1,7 @@
-﻿namespace EdabitTests
+﻿using EdabitTasks;
+using System.ComponentModel.Design;
+
+namespace EdabitTests
 {
     public class SymbolCounter
     {
