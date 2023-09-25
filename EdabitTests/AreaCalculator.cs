@@ -2,7 +2,7 @@
 
 namespace EdabitTests
 {
-    public class AreaCalculatorTests
+    public class AreaCalculator
     {
         [Fact]
         public void triangleArea_7and4_return14() 
@@ -11,7 +11,7 @@ namespace EdabitTests
             int triangleHeight = 4;
             int expected = 14;
 
-            int actual = AreaCalculator.triangleArea(triangleBase, triangleHeight);
+            int actual = EdabitTasks.AreaCalculator.triangleArea(triangleBase, triangleHeight);
 
             Assert.Equal(expected, actual); 
         }
