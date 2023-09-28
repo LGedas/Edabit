@@ -1,8 +1,8 @@
-﻿using System;
+﻿using System.Text;
 
 namespace EdabitTasks
 {
-    public class ReverseCase
+    public static class ReverseCase
     {
         private static char reverseLetter(char letter)
         {
@@ -21,14 +21,14 @@ namespace EdabitTasks
 
         public static string reverseCase(string letters) 
         {
-            string revertedLetters = string.Empty;
+            StringBuilder revertedLetters = new StringBuilder();
 
             foreach (char letter in letters) 
             {
-                revertedLetters += reverseLetter(letter);
+                revertedLetters.Append(reverseLetter(letter));
             }
 
-            return revertedLetters;
+            return revertedLetters.ToString();
         }
     }
 }
