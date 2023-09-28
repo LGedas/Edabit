@@ -4,25 +4,28 @@ namespace EdabitTasks
 {
     public class ReverseCase
     {
+        private static char reverseLetter(char letter)
+        {
+            if (char.IsUpper(letter))
+            {
+                return char.ToLower(letter);                
+            }
+
+            if (char.IsLower(letter))
+            {
+                return char.ToUpper(letter);                
+            }
+
+            return letter;
+        }
+
         public static string reverseCase(string letters) 
         {
             string revertedLetters = string.Empty;
 
             foreach (char letter in letters) 
             {
-                if (char.IsUpper(letter))
-                {
-                    revertedLetters += char.ToLower(letter);
-                    continue;
-                }
-
-                if (char.IsLower(letter))
-                {
-                    revertedLetters += char.ToUpper(letter);
-                    continue;
-                }
-
-                revertedLetters += letter;
+                revertedLetters += reverseLetter(letter);
             }
 
             return revertedLetters;
