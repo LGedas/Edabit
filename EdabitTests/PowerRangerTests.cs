@@ -57,12 +57,12 @@ namespace EdabitTests
         }
 
         [Fact]
-        public void powerRange_4_250_1300_return_3()
+        public void powerRange_4_250_1300_return3()
         {
             int power = 4;
             int lowerLimmit = 250;
             int uperLimit = 1300;
-            int expeted = 1;
+            int expeted = 3;
 
             int actual = PowerRanger.powerRanger(power, lowerLimmit, uperLimit);
 
