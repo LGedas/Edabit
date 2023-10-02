@@ -1,22 +1,30 @@
-﻿namespace EdabitTasks
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace EdabitTasks
 {
     public static class PowerRanger
     {
-        public static int  powerRanger(int power, int lowerLimmit, int upperLimmit) 
+        private static IEnumerable<double> getNumbers(int power, double lowerLimmit, double upperLimmit)
         {
-            int numbersInRange = 0;
-
-            for(int number = 1; Math.Pow(number, power) <= upperLimmit; number++)
-            {
-                double result = Math.Pow(number, power);
-                
-                if (result >= lowerLimmit && result <= upperLimmit) 
+            int number = 1;
+            double result = 1; //1^N=1
+            
+            do 
+            {              
+                if (lowerLimmit <= result)
                 {
-                    numbersInRange++;
+                    yield return result;
                 }
-            }
 
-            return numbersInRange;
+                number++;
+                result = Math.Pow(number, power);
+
+            } while (result <= upperLimmit);
+        }
+
+        public static int countNumbers(int power, double lowerLimmit, double upperLimmit)
+        {
+            return getNumbers(power, lowerLimmit, upperLimmit).Count();
         }
     }
 }
