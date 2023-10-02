@@ -13,6 +13,9 @@ https://edabit.com/challenge/kMWmiNJM4szSv7dLd -Find the Smallest and Biggest Nu
 https://edabit.com/challenge/ZSvj2W3J6QRydkyh2 - Count the Letters and Digits
 https://edabit.com/challenge/99oN5igrbXddAjHEL - Reverse the Case
 
-Next task:
 (Hard)
 https://edabit.com/challenge/McGCFZYn8ikn3GSqz - Power Ranger 
+
+Next task:
+(Hard)
+https://edabit.com/challenge/3hdXjfJozQySRC3gE
